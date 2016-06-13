@@ -1,0 +1,19 @@
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\bin\Debug\Mobile APP.exe.config
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\bin\Debug\Mobile APP.exe
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\bin\Debug\Mobile APP.pdb
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\obj\Debug\Mobile APP.csprojResolveAssemblyReference.cache
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\obj\Debug\MainWindow.baml
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\obj\Debug\MainWindow.g.cs
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\obj\Debug\App.g.cs
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\obj\Debug\Mobile APP_MarkupCompile.cache
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\obj\Debug\Mobile APP.g.resources
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\obj\Debug\Mobile_APP.Properties.Resources.resources
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\obj\Debug\Mobile APP.csproj.GenerateResource.Cache
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\obj\Debug\Mobile APP.exe
+c:\users\nmore_000\documents\visual studio 2013\Projects\Mobile APP\Mobile APP\obj\Debug\Mobile APP.pdb
+C:\Users\Xavier\Downloads\Mobile APP\Mobile APP\Mobile APP\bin\Debug\Mobile APP.exe.config
+C:\Users\Xavier\Downloads\Mobile APP\Mobile APP\Mobile APP\obj\Debug\Mobile APP.exe
+C:\Users\Xavier\Downloads\Mobile APP\Mobile APP\Mobile APP\obj\Debug\Mobile APP.pdb
+C:\Users\Carolina Rodrigues\Desktop\Xavier\LI4\Mobile APP\Mobile APP\Mobile APP\Mobile APP\bin\Debug\Mobile APP.exe.config
+C:\Users\Carolina Rodrigues\Desktop\Xavier\LI4\Mobile APP\Mobile APP\Mobile APP\Mobile APP\obj\Debug\Mobile APP.exe
+C:\Users\Carolina Rodrigues\Desktop\Xavier\LI4\Mobile APP\Mobile APP\Mobile APP\Mobile APP\obj\Debug\Mobile APP.pdb
