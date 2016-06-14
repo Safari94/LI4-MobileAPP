@@ -17,3 +17,16 @@ C:\Users\Xavier\Downloads\Mobile APP\Mobile APP\Mobile APP\obj\Debug\Mobile APP.
 C:\Users\Carolina Rodrigues\Desktop\Xavier\LI4\Mobile APP\Mobile APP\Mobile APP\Mobile APP\bin\Debug\Mobile APP.exe.config
 C:\Users\Carolina Rodrigues\Desktop\Xavier\LI4\Mobile APP\Mobile APP\Mobile APP\Mobile APP\obj\Debug\Mobile APP.exe
 C:\Users\Carolina Rodrigues\Desktop\Xavier\LI4\Mobile APP\Mobile APP\Mobile APP\Mobile APP\obj\Debug\Mobile APP.pdb
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\Debug\Mobile APP.exe.config
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile APP.exe
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile APP.pdb
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\Debug\Mobile APP.exe
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\Debug\Mobile APP.pdb
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile APP.csprojResolveAssemblyReference.cache
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\MainWindow.baml
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\MainWindow.g.cs
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\App.g.cs
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile APP_MarkupCompile.cache
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile APP.g.resources
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile_APP.Properties.Resources.resources
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile APP.csproj.GenerateResource.Cache
