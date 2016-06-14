@@ -30,3 +30,6 @@ C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP
 C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile APP.g.resources
 C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile_APP.Properties.Resources.resources
 C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile APP.csproj.GenerateResource.Cache
+C:\Users\Miguel\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\Mobile APP\bin\Debug\Mobile APP.exe.config
+C:\Users\Miguel\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\Mobile APP\obj\Debug\Mobile APP.exe
+C:\Users\Miguel\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\Mobile APP\obj\Debug\Mobile APP.pdb
