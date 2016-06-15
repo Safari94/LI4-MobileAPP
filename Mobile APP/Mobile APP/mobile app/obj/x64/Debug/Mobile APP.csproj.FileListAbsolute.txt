@@ -12,3 +12,7 @@ C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP
 C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile APP.csproj.GenerateResource.Cache
 C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile APP.exe
 C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile APP.pdb
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\x64\Debug\GMap.NET.Core.dll
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\x64\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\x64\Debug\GMap.NET.Core.xml
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\x64\Debug\GMap.NET.WindowsForms.xml

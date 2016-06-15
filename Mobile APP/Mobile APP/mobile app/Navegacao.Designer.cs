@@ -28,27 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.map = new System.Windows.Forms.WebBrowser();
+            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.mapa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // map
+            // gMapControl1
             // 
-            this.map.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.map.Location = new System.Drawing.Point(0, 0);
-            this.map.MinimumSize = new System.Drawing.Size(20, 20);
-            this.map.Name = "map";
-            this.map.Size = new System.Drawing.Size(403, 315);
-            this.map.TabIndex = 0;
-            this.map.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
+            this.gMapControl1.Bearing = 0F;
+            this.gMapControl1.CanDragMap = true;
+            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
+            this.gMapControl1.GrayScaleMode = false;
+            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.gMapControl1.LevelsKeepInMemmory = 5;
+            this.gMapControl1.Location = new System.Drawing.Point(0, 0);
+            this.gMapControl1.MarkersEnabled = true;
+            this.gMapControl1.MaxZoom = 2;
+            this.gMapControl1.MinZoom = 2;
+            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.gMapControl1.Name = "gMapControl1";
+            this.gMapControl1.NegativeMode = false;
+            this.gMapControl1.PolygonsEnabled = true;
+            this.gMapControl1.RetryLoadTile = 0;
+            this.gMapControl1.RoutesEnabled = true;
+            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.gMapControl1.ShowTileGridLines = false;
+            this.gMapControl1.Size = new System.Drawing.Size(485, 292);
+            this.gMapControl1.TabIndex = 0;
+            this.gMapControl1.Zoom = 0D;
+            // 
+            // mapa
+            // 
+            this.mapa.Location = new System.Drawing.Point(498, 119);
+            this.mapa.Name = "mapa";
+            this.mapa.Size = new System.Drawing.Size(75, 23);
+            this.mapa.TabIndex = 1;
+            this.mapa.Text = "Ver Mapa";
+            this.mapa.UseVisualStyleBackColor = true;
+            this.mapa.Click += new System.EventHandler(this.mapa_Click);
             // 
             // Navegacao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 315);
-            this.Controls.Add(this.map);
+            this.ClientSize = new System.Drawing.Size(585, 292);
+            this.Controls.Add(this.mapa);
+            this.Controls.Add(this.gMapControl1);
             this.Name = "Navegacao";
-            this.Text = "Navegacao";
             this.ResumeLayout(false);
 
         }
@@ -56,5 +80,7 @@
         #endregion
 
         private System.Windows.Forms.WebBrowser map;
+        private GMap.NET.WindowsForms.GMapControl gMapControl1;
+        private System.Windows.Forms.Button mapa;
     }
 }

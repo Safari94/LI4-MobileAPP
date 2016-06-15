@@ -1,4 +1,6 @@
 ﻿using System;
+using GMap.NET.MapProviders;
+using GMap.NET;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,37 +11,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
 namespace Mobile_APP
 {
     public partial class Navegacao : Form
     {
         //public List<Cordenadas> coords;
-        
+
 
         public Navegacao()
         {
             InitializeComponent();
-            
+
 
         }
 
-        
-
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        private void mapa_Click(object sender, EventArgs e)
         {
-            try {
+            gMapControl1.DragButton = MouseButtons.Left;
+            gMapControl1.CanDragMap=true;
+            gMapControl1.MapProvider = GMapProviders.GoogleMap;
+            gMapControl1.Position = new PointLatLng(37.983,-1.133);
+            gMapControl1.MinZoom =0;
+            gMapControl1.MaxZoom =24;
+            gMapControl1.Zoom = 9;
+            gMapControl1.AutoScroll = true;
 
-                StringBuilder query = new StringBuilder();
-                query.Append("http://maps.googleapis.com/maps/api/geocode/xml?latlng={0},{1}&sensor=false");
 
-                map.Navigate(query.ToString());
-            }
-
-            catch(Exception ex) {
-
-                MessageBox.Show(ex.Message.ToString(), "ERROR");
-            }
-            
         }
     }
 }

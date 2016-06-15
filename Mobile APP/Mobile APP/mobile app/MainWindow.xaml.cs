@@ -28,6 +28,8 @@ namespace Mobile_APP
             InitializeComponent();
         }
 
+
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             nv = new Navegacao();
