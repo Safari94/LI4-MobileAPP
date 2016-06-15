@@ -1,0 +1,14 @@
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\x64\Debug\Mobile APP.exe.config
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\x64\Debug\Mobile APP.exe
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\x64\Debug\Mobile APP.pdb
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile APP.csprojResolveAssemblyReference.cache
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\MainWindow.baml
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\MainWindow.g.cs
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\App.g.cs
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile APP_MarkupCompile.cache
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile APP.g.resources
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile_APP.Navegacao.resources
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile_APP.Properties.Resources.resources
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile APP.csproj.GenerateResource.Cache
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile APP.exe
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile APP.pdb

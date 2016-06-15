@@ -29,7 +29,7 @@
                     <DataGrid HorizontalAlignment="Left" Height="102" Margin="27,193,0,0" VerticalAlignment="Top" Width="282"/>
                     <Button Content="Concluir" HorizontalAlignment="Left" Margin="318,84,0,0" VerticalAlignment="Top" Width="54"/>
                     <Button Content="Ver" HorizontalAlignment="Left" Margin="318,109,0,0" VerticalAlignment="Top" Width="54"/>
-                    <Button Content="Ver" HorizontalAlignment="Left" Margin="318,214,0,0" VerticalAlignment="Top" Width="54"/>
+                    <Button Content="Ver" HorizontalAlignment="Left" Margin="318,214,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="RELATORIO" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="74" Margin="0">

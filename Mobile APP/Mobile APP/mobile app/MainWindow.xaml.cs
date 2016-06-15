@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mobile_APP;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace Mobile_APP
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        Navegacao nv;
+        List<Cordenadas> coords;
+            public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            nv = new Navegacao();
+            nv.Show();
         }
     }
 }
