@@ -8,24 +8,22 @@ namespace Mobile_APP
 {
     class Tarefa
     {
-        private String descricao;
-        private bool estado; // vai indicar se ja esta feita  ou nao
-        private Cordenadas coord; // Coordenada de cada Tarefa
+        private String descricao { get; set; }
+        private bool estado { get; set; } // vai indicar se ja esta feita  ou nao
+        private Cordenadas coord { get; set; } // Coordenada de cada Tarefa
 
         public Tarefa(string x, bool est, Cordenadas c) {
             this.descricao = x;
-            this.estado = est;
+            estado = est;
             this.coord = c;
         }
 
         public String ToString()
         {
-            return "Descricao= "+descricao + ";" + "Estado= " + estado + ";" + "Latitude= " + coord.Latitude + ";" + "Longitude= " + coord.Longitude;
+            return "Descricao= "+descricao + ";" + "Estado= " + estado + ";" + coord.toString();
                   
         }
 
-        public String Descricao { get; set;}
-        public bool Estado { get; set; }
-        public Cordenadas Coord {get; set;}
+        
     }
 }

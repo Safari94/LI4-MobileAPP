@@ -16,13 +16,13 @@ namespace Mobile_APP
 {
     public partial class Navegacao : Form
     {
-        public List<Cordenadas> coords;
+       Cordenadas coords;
 
 
         public Navegacao()
         {
             InitializeComponent();
-            coords = new List<Cordenadas>();
+            coords = new Cordenadas();
 
 
         }
@@ -30,23 +30,20 @@ namespace Mobile_APP
         public Navegacao(List<Cordenadas> c)
         {
             InitializeComponent();
-            coords = new List<Cordenadas>();
-            foreach (Cordenadas f in c) {
-                coords.Add(f);
-            }
+            coords = new Cordenadas();
+            
         }
         private void mapa_Click(object sender, EventArgs e)
         {
             int i;
             GMapOverlay m = new GMapOverlay("markers");
 
-            //foreach (Cordenadas f in coords)
-            //{
+            
 
-                GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(41.600865, -8.343582), GMarkerGoogleType.red);
-                m.Markers.Add(marker);
+           GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(41.600865, -8.343582), GMarkerGoogleType.red);
+           m.Markers.Add(marker);
 
-           // }
+           
             gMapControl1.Overlays.Add(m);
 
             gMapControl1.DragButton = MouseButtons.Left;

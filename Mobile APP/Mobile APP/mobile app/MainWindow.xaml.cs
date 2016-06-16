@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 using System.IO;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-
+using System.Data;
 
 namespace Mobile_APP
 {
@@ -37,7 +37,8 @@ namespace Mobile_APP
             InitializeComponent();
             coord = new List<Cordenadas>();
             tf = new List<Tarefa>();
-            insereCoordenadas();       
+            insereCoordenadas();
+            
 
         }
 
@@ -61,8 +62,8 @@ namespace Mobile_APP
             doc.Open();
             iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao"+"\n\n" + "Tarefas:\n");
             doc.Add(p);
-            p = new iTextSharp.text.Paragraph("" + this.tf.Last().Descricao);
-            doc.Add(p);
+           
+            
             foreach (Tarefa i in tf) {
 
             p = new iTextSharp.text.Paragraph(r + ") --> " + i.ToString());
@@ -102,6 +103,28 @@ namespace Mobile_APP
             tf.Add(tf4);
             Tarefa tf5 = new Tarefa("Matar um general Islamico", false, x);
             tf.Add(tf5);
+
+            
+        }
+
+       
+
+        
+
+        private void tarefas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("ID", typeof(int));
+            table.Columns.Add("NAME", typeof(string));
+            table.Columns.Add("CITY", typeof(string));
+            table.Rows.Add(111, "Devesh", "Ghaziabad");
+            table.Rows.Add(222, "ROLI", "KANPUR");
+            table.Rows.Add(102, "ROLI", "MAINPURI");
+            table.Rows.Add(212, "DEVESH", "KANPUR");
+            tarefas.ItemsSource = table;
+
+
+
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -23,10 +23,7 @@ namespace Mobile_APP
             imagem =i;
         }
 
-        public Cordenadas Coord { get; set; }
-        public String Nota { get; set; }
-        public Image Imagem { get; set; }
-        public XmlDocument Voz { get; set; }
+       
 
     }
 }
