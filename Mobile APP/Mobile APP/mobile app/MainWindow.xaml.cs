@@ -27,17 +27,21 @@ namespace Mobile_APP
     public partial class MainWindow : Window
     {
         Navegacao nv;
+        List<Cordenadas> coord;
         Missao missao;
             public MainWindow()
         {
             InitializeComponent();
+            coord = new List<Cordenadas>();
+            insereCoordenadas();
         }
 
 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            nv = new Navegacao();
+            
+            nv = new Navegacao(coord);
             nv.Show();
         }
 
@@ -49,6 +53,20 @@ namespace Mobile_APP
             iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao");
             doc.Add(p);
             doc.Close();
+
+        }
+
+        public void insereCoordenadas() {
+
+            Cordenadas x = new Cordenadas(41.585773, -8.359406);
+            coord.Add(x);
+            Cordenadas y = new Cordenadas(41.600865, -8.343582);
+            coord.Add(y);
+            Cordenadas z = new Cordenadas(41.612735, -8.352620);
+            coord.Add(z);
+            Cordenadas d = new Cordenadas(41.591438, -8.372014);
+            coord.Add(d);
+            
 
         }
     }

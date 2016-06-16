@@ -2,22 +2,22 @@
 {
     public class Cordenadas
     {
-        private float latitude;
-        private float longitude;
+        private double latitude;
+        private double longitude;
 
         public Cordenadas() {
             this.latitude = 0.0f;
             this.longitude = 0.0f;
         }
 
-        public Cordenadas(float lgtd, float lat) {
+        public Cordenadas(double lgtd, double lat) {
 
             this.longitude = lgtd;
             this.latitude = lat;
 
         }
 
-        public float Latitude { get; set; }
-        public float Longitude { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
     }
 }
