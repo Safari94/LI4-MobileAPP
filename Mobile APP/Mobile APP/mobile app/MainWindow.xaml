@@ -41,7 +41,7 @@
                     <Separator HorizontalAlignment="Left" Height="4" Margin="44,112,0,0" VerticalAlignment="Top" Width="306" Background="White"/>
                     <Label Content="Ficheiro" HorizontalAlignment="Left" Margin="71,137,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="129,137,0,0" VerticalAlignment="Top" Width="172"/>
-                    <Button Content="Criar Ficheiro" HorizontalAlignment="Left" Margin="77,180,0,0" VerticalAlignment="Top" Width="93"/>
+                    <Button x:Name="pdf" Content="Criar Ficheiro" HorizontalAlignment="Left" Margin="77,180,0,0" VerticalAlignment="Top" Width="93" Click="pdf_Click"/>
                     <Button Content="Escolher Ficheiro" HorizontalAlignment="Left" Margin="217,180,0,0" VerticalAlignment="Top" Width="93"/>
                     <Button Content="Cancelar" HorizontalAlignment="Left" Margin="217,251,0,0" VerticalAlignment="Top" Width="75"/>
                     <Separator HorizontalAlignment="Left" Height="12" Margin="44,208,0,0" VerticalAlignment="Top" Width="306" Foreground="White" Background="White"/>

@@ -14,6 +14,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+
+
 namespace Mobile_APP
 {
     /// <summary>
@@ -22,7 +27,7 @@ namespace Mobile_APP
     public partial class MainWindow : Window
     {
         Navegacao nv;
-        List<Cordenadas> coords;
+        Missao missao;
             public MainWindow()
         {
             InitializeComponent();
@@ -34,6 +39,17 @@ namespace Mobile_APP
         {
             nv = new Navegacao();
             nv.Show();
+        }
+
+        private void pdf_Click(object sender, RoutedEventArgs e)
+        {
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35); // vai ser inicializado na class Missão
+            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Relatorio_Missao.pdf", FileMode.Create));
+            doc.Open();
+            iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao");
+            doc.Add(p);
+            doc.Close();
+
         }
     }
 }
