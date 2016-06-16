@@ -13,10 +13,10 @@ namespace Mobile_APP
 {
     class Missao
     {
-        private Document doc;
-        private List<PontoInteresee> pts;
-        private List<Tarefa> tfs;
-        private String estado;
+        public Document doc { get; set; }
+        public List<PontoInteresee> pts { get; set; }
+        public List<Tarefa> tfs { get; set; }
+        public String estado { get; set; }
 
         public Missao(List<PontoInteresee> p, List<Tarefa> tf, String es) {
             doc = new Document(iTextSharp.text.PageSize.LETTER,10,10,42,35);
@@ -25,9 +25,36 @@ namespace Mobile_APP
             estado = es;
         }
 
-        public Document Documento { get; set; }
-        public String Estado { get; set; }
-        public List<PontoInteresee> Pts { get; set; }
-        public List<Tarefa> Tfs { get; set; }
+        public List<Cordenadas> getCoordenadasTarefas() {
+
+            List<Cordenadas> aux = new List<Cordenadas>();
+
+            foreach (Tarefa tf in tfs) {
+
+                aux.Add(tf.coord);
+            }
+
+            return aux;
+        }
+
+        public List<Cordenadas> getCoordenadasPtsInteresse()
+        {
+
+            List<Cordenadas> aux = new List<Cordenadas>();
+
+            foreach (PontoInteresee pi in pts)
+            {
+
+                aux.Add(pi.coord);
+            }
+
+            return aux;
+        }
+
+
+
+
+
+
     }
 }

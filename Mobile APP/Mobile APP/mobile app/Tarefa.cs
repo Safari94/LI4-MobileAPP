@@ -8,15 +8,17 @@ namespace Mobile_APP
 {
     class Tarefa
     {
-        private String descricao { get; set; }
-        private bool estado { get; set; } // vai indicar se ja esta feita  ou nao
-        private Cordenadas coord { get; set; } // Coordenada de cada Tarefa
+        public String descricao { get; set; }
+        public bool estado { get; set; } // vai indicar se ja esta feita  ou nao
+        public Cordenadas coord { get; set; } // Coordenada de cada Tarefa
 
         public Tarefa(string x, bool est, Cordenadas c) {
             this.descricao = x;
             estado = est;
             this.coord = c;
         }
+
+        
 
         public String ToString()
         {

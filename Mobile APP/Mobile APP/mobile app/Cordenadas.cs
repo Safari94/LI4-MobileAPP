@@ -4,8 +4,8 @@ namespace Mobile_APP
 {
     public class Cordenadas
     {
-        private double latitude { get; set; }
-        private double longitude { get; set; }
+        public double latitude { get; set; }
+        public double longitude { get; set; }
 
         public Cordenadas() {
             this.latitude = 0.0f;

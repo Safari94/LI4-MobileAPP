@@ -51,6 +51,8 @@ namespace Mobile_APP
             nv.Show();
         }
 
+
+        // Gera relatorio
         private void pdf_Click(object sender, RoutedEventArgs e)
         {
             this.insereTarefas();
@@ -64,11 +66,12 @@ namespace Mobile_APP
             doc.Add(p);
            
             
-            foreach (Tarefa i in tf) {
+            foreach (Tarefa i in tf)
+            {
 
-            p = new iTextSharp.text.Paragraph(r + ") --> " + i.ToString());
-            doc.Add(p);
-            r++;
+                 p = new iTextSharp.text.Paragraph(r + ") --> " + i.ToString());
+                doc.Add(p);
+                r++;
 
             }
 
@@ -77,7 +80,28 @@ namespace Mobile_APP
 
         }
 
-        public void insereCoordenadas() {
+
+
+        
+        //listar no DataGrid todas as tarefas da missão
+        private void tarefas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
+
+
+
+        }
+        //listar no DataGrid todos os pontos de interesse
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+
+        //----------------------------------------- FUNÇOES AUXILIARES -------------------------------------------------
+
+        public void insereCoordenadas()
+        {
 
             Cordenadas x = new Cordenadas(41.585773, -8.359406);
             coord.Add(x);
@@ -87,13 +111,14 @@ namespace Mobile_APP
             coord.Add(z);
             Cordenadas d = new Cordenadas(41.591438, -8.372014);
             coord.Add(d);
-            
+
 
         }
 
-        public void insereTarefas() {
+        public void insereTarefas()
+        {
             Cordenadas x = new Cordenadas(41.585773, -8.359406);
-            Tarefa tf1 = new Tarefa("Matar um general Islamico",false,x);
+            Tarefa tf1 = new Tarefa("Matar um general Islamico", false, x);
             tf.Add(tf1);
             Tarefa tf2 = new Tarefa("Resgatar refens ", false, x);
             tf.Add(tf2);
@@ -104,31 +129,6 @@ namespace Mobile_APP
             Tarefa tf5 = new Tarefa("Matar um general Islamico", false, x);
             tf.Add(tf5);
 
-            
-        }
-
-       
-
-        
-
-        private void tarefas_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            DataTable table = new DataTable();
-            table.Columns.Add("ID", typeof(int));
-            table.Columns.Add("NAME", typeof(string));
-            table.Columns.Add("CITY", typeof(string));
-            table.Rows.Add(111, "Devesh", "Ghaziabad");
-            table.Rows.Add(222, "ROLI", "KANPUR");
-            table.Rows.Add(102, "ROLI", "MAINPURI");
-            table.Rows.Add(212, "DEVESH", "KANPUR");
-            tarefas.ItemsSource = table;
-
-
-
-        }
-
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
         }
     }

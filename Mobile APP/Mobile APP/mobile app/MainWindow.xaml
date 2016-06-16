@@ -10,16 +10,17 @@
             <TabItem Header="MISSÃO">
                 <Grid Background="#FFE5E5E5">
                     <Rectangle Fill="#FF0747F1" HorizontalAlignment="Left" Height="322" Stroke="Black" VerticalAlignment="Top" Width="395" Margin="0,0,0,-4"/>
-                    <Rectangle Fill="#FFA1A6B2" HorizontalAlignment="Left" Height="298" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="375"/>
+                    <Rectangle x:Name="iphoto" Fill="#FFA1A6B2" HorizontalAlignment="Left" Height="298" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="375"/>
                     <Label Content="Missão Ativa" HorizontalAlignment="Left" Margin="27,17,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="109,17,0,0" VerticalAlignment="Top" Width="102" Foreground="White"/>
-                    <Label Content="Tarefas" HorizontalAlignment="Left" Margin="27,38,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-                    <DataGrid x:Name="tarefas" HorizontalAlignment="Left" Height="102" Margin="27,64,0,0" VerticalAlignment="Top" Width="282" GridLinesVisibility="Horizontal"   SelectionChanged="tarefas_SelectionChanged_"/>
-                    <Label Content="Pontos de Interesse" HorizontalAlignment="Left" Margin="27,167,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-                    <DataGrid HorizontalAlignment="Left" Height="102" Margin="27,193,0,0" VerticalAlignment="Top" Width="282" SelectionChanged="DataGrid_SelectionChanged"/>
+                    <Label Content="Tarefas" HorizontalAlignment="Left" Margin="27,86,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                    <Label Content="Pontos de Interesse" HorizontalAlignment="Left" Margin="27,136,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
                     <Button Content="Concluir" HorizontalAlignment="Left" Margin="318,84,0,0" VerticalAlignment="Top" Width="54"/>
-                    <Button Content="Ver" HorizontalAlignment="Left" Margin="318,109,0,0" VerticalAlignment="Top" Width="54"/>
-                    <Button Content="Ver" HorizontalAlignment="Left" Margin="318,214,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click"/>
+                    <Button Content="Ver" HorizontalAlignment="Left" Margin="109,89,0,0" VerticalAlignment="Top" Width="54"/>
+                    <Button Content="Ver" HorizontalAlignment="Left" Margin="174,136,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click"/>
+                    <Button x:Name="gravarVoz" Content="Gravador" HorizontalAlignment="Left" Height="20" Margin="46,217,0,0" VerticalAlignment="Top" Width="63"/>
+                    <Button x:Name="notepad" Content="NotePad" HorizontalAlignment="Left" Height="21" Margin="165,216,0,0" VerticalAlignment="Top" Width="63" Click="button_Click_1"/>
+                    <Button x:Name="iphoto1" Content="PhotoKill" HorizontalAlignment="Left" Height="21" Margin="294,216,0,0" VerticalAlignment="Top" Width="69"/>
                 </Grid>
             </TabItem>
             <TabItem Header="RELATORIO" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="74" Margin="0">

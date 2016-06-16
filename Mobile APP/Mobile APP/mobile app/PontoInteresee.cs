@@ -11,10 +11,10 @@ namespace Mobile_APP
 {
     class PontoInteresee
     {
-        private Cordenadas coord;
-        private XmlDocument voz;
-        private String nota;
-        private Image imagem;
+        public Cordenadas coord { get; set; }
+        public XmlDocument voz;
+        public String nota;
+        public Image imagem;
 
         public PontoInteresee(Cordenadas cord, String n, Image i) {
             coord = cord;
@@ -22,6 +22,12 @@ namespace Mobile_APP
             nota = n;
             imagem =i;
         }
+
+        public String toString() {
+            return coord.toString() + "; Nota: " + nota;
+        }
+
+        
 
        
 
