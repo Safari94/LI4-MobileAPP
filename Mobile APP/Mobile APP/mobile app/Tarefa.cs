@@ -18,6 +18,12 @@ namespace Mobile_APP
             this.coord = c;
         }
 
+        public String ToString()
+        {
+            return "Descricao= "+descricao + ";" + "Estado= " + estado + ";" + "Latitude= " + coord.Latitude + ";" + "Longitude= " + coord.Longitude;
+                  
+        }
+
         public String Descricao { get; set;}
         public bool Estado { get; set; }
         public Cordenadas Coord {get; set;}

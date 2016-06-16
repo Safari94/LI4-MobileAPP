@@ -37,8 +37,7 @@ namespace Mobile_APP
             InitializeComponent();
             coord = new List<Cordenadas>();
             tf = new List<Tarefa>();
-            insereCoordenadas();
-           
+            insereCoordenadas();       
 
         }
 
@@ -53,22 +52,22 @@ namespace Mobile_APP
 
         private void pdf_Click(object sender, RoutedEventArgs e)
         {
-            insereTarefas();
+            this.insereTarefas();
             int r = 1;
 
             Document doc = new Document(PageSize.LETTER, 10, 10, 42, 35); // vai ser inicializado na class Missão
             PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Relatorio_Missao.pdf", FileMode.Create));
 
             doc.Open();
-            iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao"+"\n\n"
-                + "Tarefas:\n");
+            iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao"+"\n\n" + "Tarefas:\n");
             doc.Add(p);
-
+            p = new iTextSharp.text.Paragraph("" + this.tf.Last().Descricao);
+            doc.Add(p);
             foreach (Tarefa i in tf) {
 
-
-                doc.Add(new iTextSharp.text.Paragraph(r + ") --> " + i.Descricao.ToString()));
-                r++;
+            p = new iTextSharp.text.Paragraph(r + ") --> " + i.ToString());
+            doc.Add(p);
+            r++;
 
             }
 
