@@ -16,7 +16,7 @@
                     <Label Content="Tarefas" HorizontalAlignment="Left" Margin="27,38,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
                     <DataGrid HorizontalAlignment="Left" Height="102" Margin="27,64,0,0" VerticalAlignment="Top" Width="282"/>
                     <Label Content="Pontos de Interesse" HorizontalAlignment="Left" Margin="27,167,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-                    <DataGrid HorizontalAlignment="Left" Height="102" Margin="27,193,0,0" VerticalAlignment="Top" Width="282"/>
+                    <DataGrid HorizontalAlignment="Left" Height="102" Margin="27,193,0,0" VerticalAlignment="Top" Width="282" SelectionChanged="DataGrid_SelectionChanged"/>
                     <Button Content="Concluir" HorizontalAlignment="Left" Margin="318,84,0,0" VerticalAlignment="Top" Width="54"/>
                     <Button Content="Ver" HorizontalAlignment="Left" Margin="318,109,0,0" VerticalAlignment="Top" Width="54"/>
                     <Button Content="Ver" HorizontalAlignment="Left" Margin="318,214,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click"/>

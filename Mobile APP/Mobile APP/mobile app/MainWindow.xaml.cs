@@ -29,11 +29,17 @@ namespace Mobile_APP
         Navegacao nv;
         List<Cordenadas> coord;
         Missao missao;
+        List<PontoInteresee> pts;
+        List<Tarefa> tf;
+     
             public MainWindow()
         {
             InitializeComponent();
             coord = new List<Cordenadas>();
+            tf = new List<Tarefa>();
             insereCoordenadas();
+           
+
         }
 
 
@@ -47,11 +53,26 @@ namespace Mobile_APP
 
         private void pdf_Click(object sender, RoutedEventArgs e)
         {
-            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35); // vai ser inicializado na class Missão
+            insereTarefas();
+            int r = 1;
+
+            Document doc = new Document(PageSize.LETTER, 10, 10, 42, 35); // vai ser inicializado na class Missão
             PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Relatorio_Missao.pdf", FileMode.Create));
+
             doc.Open();
-            iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao");
+            iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao"+"\n\n"
+                + "Tarefas:\n");
             doc.Add(p);
+
+            foreach (Tarefa i in tf) {
+
+
+                doc.Add(new iTextSharp.text.Paragraph(r + ") --> " + i.Descricao.ToString()));
+                r++;
+
+            }
+
+
             doc.Close();
 
         }
@@ -67,6 +88,25 @@ namespace Mobile_APP
             Cordenadas d = new Cordenadas(41.591438, -8.372014);
             coord.Add(d);
             
+
+        }
+
+        public void insereTarefas() {
+            Cordenadas x = new Cordenadas(41.585773, -8.359406);
+            Tarefa tf1 = new Tarefa("Matar um general Islamico",false,x);
+            tf.Add(tf1);
+            Tarefa tf2 = new Tarefa("Resgatar refens ", false, x);
+            tf.Add(tf2);
+            Tarefa tf3 = new Tarefa("Proteger civilização", false, x);
+            tf.Add(tf3);
+            Tarefa tf4 = new Tarefa("Escoltar comida para pobres", false, x);
+            tf.Add(tf4);
+            Tarefa tf5 = new Tarefa("Matar um general Islamico", false, x);
+            tf.Add(tf5);
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
         }
     }
