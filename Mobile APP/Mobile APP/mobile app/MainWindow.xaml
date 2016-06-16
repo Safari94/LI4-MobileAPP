@@ -7,16 +7,6 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TabControl Height="346" VerticalAlignment="Top" Margin="0,0,-24,0">
-            <TabItem Header="LOGIN" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="55">
-                <Grid Background="#FF0747F1">
-                    <Rectangle Fill="#FFA1A6B2" HorizontalAlignment="Left" Height="208" Margin="59,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="279"/>
-                    <Button Content="Login" HorizontalAlignment="Left" Margin="165,219,0,0" VerticalAlignment="Top" Width="75"/>
-                    <Label Content="Identificador" HorizontalAlignment="Left" Margin="93,98,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-                    <TextBox HorizontalAlignment="Left" Height="26" Margin="175,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16"/>
-                    <Label Content="Password" HorizontalAlignment="Left" Margin="110,147,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-                    <PasswordBox HorizontalAlignment="Left" Margin="175,147,0,0" VerticalAlignment="Top" Width="120" Height="26" FontSize="16"/>
-                </Grid>
-            </TabItem>
             <TabItem Header="MISSÃO">
                 <Grid Background="#FFE5E5E5">
                     <Rectangle Fill="#FF0747F1" HorizontalAlignment="Left" Height="322" Stroke="Black" VerticalAlignment="Top" Width="395" Margin="0,0,0,-4"/>
@@ -40,9 +30,8 @@
                     <Button Content="Ok" HorizontalAlignment="Left" Margin="275,61,0,0" VerticalAlignment="Top" Width="50" Height="23"/>
                     <Separator HorizontalAlignment="Left" Height="4" Margin="44,112,0,0" VerticalAlignment="Top" Width="306" Background="White"/>
                     <Label Content="Ficheiro" HorizontalAlignment="Left" Margin="71,137,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-                    <Label Content="Label" HorizontalAlignment="Left" Margin="129,137,0,0" VerticalAlignment="Top" Width="172"/>
-                    <Button x:Name="pdf" Content="Criar Ficheiro" HorizontalAlignment="Left" Margin="77,180,0,0" VerticalAlignment="Top" Width="93" Click="pdf_Click"/>
-                    <Button Content="Escolher Ficheiro" HorizontalAlignment="Left" Margin="217,180,0,0" VerticalAlignment="Top" Width="93"/>
+                    <Label x:Name="ficheiro" Content="" HorizontalAlignment="Left" Margin="129,137,0,0" VerticalAlignment="Top" Width="172"/>
+                    <Button x:Name="pdf" Content="Criar Ficheiro" HorizontalAlignment="Left" Margin="156,183,0,0" VerticalAlignment="Top" Width="93" Click="pdf_Click"/>
                     <Button Content="Cancelar" HorizontalAlignment="Left" Margin="217,251,0,0" VerticalAlignment="Top" Width="75"/>
                     <Separator HorizontalAlignment="Left" Height="12" Margin="44,208,0,0" VerticalAlignment="Top" Width="306" Foreground="White" Background="White"/>
                     <Button Content="Confirmar" HorizontalAlignment="Left" Margin="95,251,0,0" VerticalAlignment="Top" Width="75"/>
