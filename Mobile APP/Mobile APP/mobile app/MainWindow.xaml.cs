@@ -27,19 +27,23 @@ namespace Mobile_APP
     public partial class MainWindow : Window
     {
         Navegacao nv;
+        Notepad nt;
+
         Mosta_tarefas mt;
         List<Cordenadas> coord;
         Missao missao;
         List<PontoInteresee> pts;
         List<Tarefa> tf;
-     
-            public MainWindow()
+        List<String> notas;
+
+        public MainWindow()
         {
             InitializeComponent();
             coord = new List<Cordenadas>();
             tf = new List<Tarefa>();
             insereCoordenadas();
-            
+            notas = new List<String>();
+
 
         }
 
@@ -47,7 +51,7 @@ namespace Mobile_APP
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
             nv = new Navegacao(coord);
             nv.Show();
         }
@@ -63,14 +67,14 @@ namespace Mobile_APP
             PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Relatorio_Missao.pdf", FileMode.Create));
 
             doc.Open();
-            iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao"+"\n\n" + "Tarefas:\n");
+            iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao" + "\n\n" + "Tarefas:\n");
             doc.Add(p);
-           
-            
+
+
             foreach (Tarefa i in tf)
             {
 
-                 p = new iTextSharp.text.Paragraph(r + ") --> " + i.ToString());
+                p = new iTextSharp.text.Paragraph(r + ") --> " + i.ToString());
                 doc.Add(p);
                 r++;
 
@@ -83,8 +87,8 @@ namespace Mobile_APP
 
 
 
-        
-        
+
+
 
 
         //----------------------------------------- FUNÇOES AUXILIARES -------------------------------------------------
@@ -127,9 +131,13 @@ namespace Mobile_APP
             mt.Show();
         }
 
-        //NotePad
         private void button_Click_1(object sender, RoutedEventArgs e)
         {
+
+            nt = new Notepad();
+            nt.Show();
+            string s = nt.getNota();
+            notas.Add(s);
 
         }
     }
