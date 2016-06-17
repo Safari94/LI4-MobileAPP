@@ -27,6 +27,7 @@ namespace Mobile_APP
     public partial class MainWindow : Window
     {
         Navegacao nv;
+        Mosta_tarefas mt;
         List<Cordenadas> coord;
         Missao missao;
         List<PontoInteresee> pts;
@@ -83,19 +84,7 @@ namespace Mobile_APP
 
 
         
-        //listar no DataGrid todas as tarefas da missão
-        private void tarefas_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-           
-
-
-
-        }
-        //listar no DataGrid todos os pontos de interesse
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+        
 
 
         //----------------------------------------- FUNÇOES AUXILIARES -------------------------------------------------
@@ -129,6 +118,18 @@ namespace Mobile_APP
             Tarefa tf5 = new Tarefa("Matar um general Islamico", false, x);
             tf.Add(tf5);
 
+
+        }
+
+        private void verTarefas_Click(object sender, RoutedEventArgs e)
+        {
+            mt = new Mosta_tarefas();
+            mt.Show();
+        }
+
+        //NotePad
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
 
         }
     }
