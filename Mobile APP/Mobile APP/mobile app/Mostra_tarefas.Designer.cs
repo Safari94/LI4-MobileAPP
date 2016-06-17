@@ -41,6 +41,7 @@
             this.tfs.Name = "tfs";
             this.tfs.Size = new System.Drawing.Size(439, 178);
             this.tfs.TabIndex = 0;
+            this.tfs.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tfs_CellClick);
             // 
             // verMapa
             // 

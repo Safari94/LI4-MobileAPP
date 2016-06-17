@@ -12,11 +12,12 @@ namespace Mobile_APP
 {
     public partial class Mosta_tarefas : Form
     {
-
+        Cordenadas cd;
         Navegacao nv;
         public Mosta_tarefas()
         {
             InitializeComponent();
+            cd = new Cordenadas();
         }
 
 
@@ -45,9 +46,16 @@ namespace Mobile_APP
 
         private void verMapa_Click(object sender, EventArgs e)
         {
-            nv = new Navegacao();
+            nv = new Navegacao(cd);
             nv.Show();
 
+        }
+
+        private void tfs_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var item = tfs.Rows[e.RowIndex].Cells[2].Value;
+            cd = (Cordenadas) item;
+            
         }
     }
     }
