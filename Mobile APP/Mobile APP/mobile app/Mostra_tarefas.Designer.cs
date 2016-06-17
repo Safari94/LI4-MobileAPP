@@ -41,7 +41,6 @@
             this.tfs.Name = "tfs";
             this.tfs.Size = new System.Drawing.Size(439, 178);
             this.tfs.TabIndex = 0;
-            
             // 
             // verMapa
             // 
@@ -51,6 +50,7 @@
             this.verMapa.TabIndex = 1;
             this.verMapa.Text = "Ver no Mapa";
             this.verMapa.UseVisualStyleBackColor = true;
+            this.verMapa.Click += new System.EventHandler(this.verMapa_Click);
             // 
             // Mostar
             // 

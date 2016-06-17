@@ -12,19 +12,20 @@ namespace Mobile_APP
     class PontoInteresee
     {
         public Cordenadas coord { get; set; }
-        public XmlDocument voz;
-        public String nota;
-        public Image imagem;
+        public String nome { get; set; }
+        public String descricao { get; set; }
 
-        public PontoInteresee(Cordenadas cord, String n, Image i) {
+
+        public PontoInteresee(Cordenadas cord, String n, String d) {
             coord = cord;
-            voz = new XmlDocument();
-            nota = n;
-            imagem =i;
+            nome = n;
+            descricao = d;
+
+          
         }
 
         public String toString() {
-            return coord.toString() + "; Nota: " + nota;
+            return coord.toString() + "; Nota: " + nome + "; Descrição: " + descricao;
         }
 
         

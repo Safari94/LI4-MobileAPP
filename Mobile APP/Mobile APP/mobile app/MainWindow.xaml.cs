@@ -26,12 +26,12 @@ namespace Mobile_APP
     /// </summary>
     public partial class MainWindow : Window
     {
-        Navegacao nv;
+        
         Notepad nt;
-
         Mosta_tarefas mt;
         List<Cordenadas> coord;
         Missao missao;
+        Mostra_PI mpi;
         List<PontoInteresee> pts;
         List<Tarefa> tf;
         List<String> notas;
@@ -51,9 +51,9 @@ namespace Mobile_APP
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-            nv = new Navegacao(coord);
-            nv.Show();
+            mpi = new Mostra_PI();
+            mpi.Show();
+            
         }
 
 
@@ -79,6 +79,16 @@ namespace Mobile_APP
                 r++;
 
             }
+            p = new iTextSharp.text.Paragraph("Notas: \n \n");
+            doc.Add(p);
+            r = 0;
+            foreach (String n in notas) {
+
+                p = new iTextSharp.text.Paragraph(r + ") --> " + n.ToString());
+                doc.Add(p);
+                r++;
+            }
+
 
 
             doc.Close();
@@ -88,8 +98,22 @@ namespace Mobile_APP
 
 
 
+        private void verTarefas_Click(object sender, RoutedEventArgs e)
+        {
+            mt = new Mosta_tarefas();
+            mt.Show();
+        }
 
+        // NotePad
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
 
+            nt = new Notepad();
+            nt.Show();
+            string s = nt.getNota();
+            notas.Add(s);
+
+        }
 
         //----------------------------------------- FUNÇOES AUXILIARES -------------------------------------------------
 
@@ -122,22 +146,6 @@ namespace Mobile_APP
             Tarefa tf5 = new Tarefa("Matar um general Islamico", false, x);
             tf.Add(tf5);
 
-
-        }
-
-        private void verTarefas_Click(object sender, RoutedEventArgs e)
-        {
-            mt = new Mosta_tarefas();
-            mt.Show();
-        }
-
-        private void button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-            nt = new Notepad();
-            nt.Show();
-            string s = nt.getNota();
-            notas.Add(s);
 
         }
     }

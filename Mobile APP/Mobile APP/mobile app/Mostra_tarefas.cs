@@ -12,8 +12,8 @@ namespace Mobile_APP
 {
     public partial class Mosta_tarefas : Form
     {
-      
-        
+
+        Navegacao nv;
         public Mosta_tarefas()
         {
             InitializeComponent();
@@ -43,6 +43,12 @@ namespace Mobile_APP
             tfs.DataSource = tf;
         }
 
-      }
+        private void verMapa_Click(object sender, EventArgs e)
+        {
+            nv = new Navegacao();
+            nv.Show();
+
+        }
+    }
     }
 

@@ -22,3 +22,4 @@ C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP
 C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\x64\Debug\itextsharp.xml
 C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile_APP.Mosta_tarefas.resources
 C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile_APP.Notepad.resources
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile_APP.Mostra_PI.resources
