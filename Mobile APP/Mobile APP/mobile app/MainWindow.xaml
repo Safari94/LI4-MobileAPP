@@ -30,15 +30,15 @@
                         <ColumnDefinition Width="362*"/>
                     </Grid.ColumnDefinitions>
                     <Rectangle Fill="#FFA1A6B2" HorizontalAlignment="Left" Height="250" Margin="6,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="307" Grid.Column="1"/>
-                    <Label Content="Missão" HorizontalAlignment="Left" Margin="40,58,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Grid.Column="1" Height="26" Width="49"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="92,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" Grid.Column="1"/>
-                    <Button Content="Ok" HorizontalAlignment="Left" Margin="238,61,0,0" VerticalAlignment="Top" Width="50" Height="23" Grid.Column="1"/>
+                    <Label Content="Nome Ficheiro" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Grid.Column="1" Height="26" Width="79"/>
+                    <TextBox x:Name="nomefich" HorizontalAlignment="Left" Height="23" Margin="92,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16" Grid.Column="1"/>
+                    <Button x:Name="saveNome" Content="Ok" HorizontalAlignment="Left" Margin="238,61,0,0" VerticalAlignment="Top" Width="50" Height="23" Grid.Column="1" Click="saveNome_Click"/>
                     <Separator HorizontalAlignment="Left" Height="4" Margin="7,112,0,0" VerticalAlignment="Top" Width="306" Background="White" Grid.Column="1"/>
                     <Label Content="Ficheiro" HorizontalAlignment="Left" Margin="34,137,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Grid.Column="1" Height="26" Width="55"/>
                     <Label x:Name="ficheiro" Content="" HorizontalAlignment="Left" Margin="92,137,0,0" VerticalAlignment="Top" Width="172" Grid.Column="1" Height="26"/>
                     <Button x:Name="pdf" Content="Criar Ficheiro" HorizontalAlignment="Left" Margin="119,183,0,0" VerticalAlignment="Top" Width="93" Click="pdf_Click" Grid.Column="1" Height="20"/>
                     <Button Content="Cancelar" HorizontalAlignment="Left" Margin="180,251,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="20"/>
-                    <Separator HorizontalAlignment="Left" Height="12" Margin="7,208,0,0" VerticalAlignment="Top" Width="306" Foreground="White" Background="White" Grid.Column="1"/>
+                    <Separator HorizontalAlignment="Left" Height="12" Margin="6,203,0,0" VerticalAlignment="Top" Width="306" Foreground="White" Background="White" Grid.Column="1"/>
                     <Button Content="Confirmar" HorizontalAlignment="Left" Margin="58,251,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="20"/>
                 </Grid>
             </TabItem>

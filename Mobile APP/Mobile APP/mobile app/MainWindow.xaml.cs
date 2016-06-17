@@ -26,7 +26,7 @@ namespace Mobile_APP
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        String nomeF;
         Notepad nt;
         Mosta_tarefas mt;
         List<Cordenadas> coord;
@@ -43,6 +43,7 @@ namespace Mobile_APP
             tf = new List<Tarefa>();
             insereCoordenadas();
             notas = new List<String>();
+            nomeF = "";
 
 
         }
@@ -64,7 +65,7 @@ namespace Mobile_APP
             int r = 1;
 
             Document doc = new Document(PageSize.LETTER, 10, 10, 42, 35); // vai ser inicializado na class Missão
-            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Relatorio_Missao.pdf", FileMode.Create));
+            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream(nomefich+".pdf", FileMode.Create));
 
             doc.Open();
             iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao" + "\n\n" + "Tarefas:\n");
@@ -84,7 +85,7 @@ namespace Mobile_APP
             r = 0;
             foreach (String n in notas) {
 
-                p = new iTextSharp.text.Paragraph(r + ") --> " + n.ToString());
+                p = new iTextSharp.text.Paragraph(r + ") --> " + n);
                 doc.Add(p);
                 r++;
             }
@@ -147,6 +148,11 @@ namespace Mobile_APP
             tf.Add(tf5);
 
 
+        }
+
+        private void saveNome_Click(object sender, RoutedEventArgs e)
+        {
+            nomeF = nomefich.Text;
         }
     }
 }
