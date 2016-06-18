@@ -111,6 +111,14 @@ namespace Mobile_APP {
         #line default
         #line hidden
         
+        
+        #line 51 "..\..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button rececpaoDados;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -196,6 +204,23 @@ namespace Mobile_APP {
             
             #line 39 "..\..\..\MainWindow.xaml"
             this.pdf.Click += new System.Windows.RoutedEventHandler(this.pdf_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 11:
+            this.rececpaoDados = ((System.Windows.Controls.Button)(target));
+            
+            #line 51 "..\..\..\MainWindow.xaml"
+            this.rececpaoDados.Click += new System.Windows.RoutedEventHandler(this.rececpaoDados_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 12:
+            
+            #line 52 "..\..\..\MainWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_2);
             
             #line default
             #line hidden

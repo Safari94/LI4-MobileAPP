@@ -1,23 +1,13 @@
-﻿using Mobile_APP;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 using System.IO;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-using System.Data;
+using System.Net.Sockets;
+using System.IO.Ports;
+using System.Threading;
 
 namespace Mobile_APP
 {
@@ -29,21 +19,25 @@ namespace Mobile_APP
         String nomeF;
         Notepad nt;
         Mosta_tarefas mt;
-        List<Cordenadas> coord;
-        Missao missao;
         Mostra_PI mpi;
         List<PontoInteresee> pts;
         List<Tarefa> tf;
         List<String> notas;
+        static bool _continue;
+        static SerialPort porta;
+        String data;
 
         public MainWindow()
         {
             InitializeComponent();
-            coord = new List<Cordenadas>();
+            
             tf = new List<Tarefa>();
-            insereCoordenadas();
+           
             notas = new List<String>();
             nomeF = "";
+            SerialPort porta = new SerialPort("COM6", 9600, Parity.None, 8, StopBits.One);
+            data = "";
+
 
 
         }
@@ -61,7 +55,7 @@ namespace Mobile_APP
         // Gera relatorio
         private void pdf_Click(object sender, RoutedEventArgs e)
         {
-            this.insereTarefas();
+            //this.insereTarefas();
             int r = 1;
 
             Document doc = new Document(PageSize.LETTER, 10, 10, 42, 35); // vai ser inicializado na class Missão
@@ -116,43 +110,76 @@ namespace Mobile_APP
 
         }
 
-        //----------------------------------------- FUNÇOES AUXILIARES -------------------------------------------------
-
-        public void insereCoordenadas()
-        {
-
-            Cordenadas x = new Cordenadas(41.585773, -8.359406);
-            coord.Add(x);
-            Cordenadas y = new Cordenadas(41.600865, -8.343582);
-            coord.Add(y);
-            Cordenadas z = new Cordenadas(41.612735, -8.352620);
-            coord.Add(z);
-            Cordenadas d = new Cordenadas(41.591438, -8.372014);
-            coord.Add(d);
-
-
-        }
-
-        public void insereTarefas()
-        {
-            Cordenadas x = new Cordenadas(41.585773, -8.359406);
-            Tarefa tf1 = new Tarefa("Matar um general Islamico", false, x);
-            tf.Add(tf1);
-            Tarefa tf2 = new Tarefa("Resgatar refens ", false, x);
-            tf.Add(tf2);
-            Tarefa tf3 = new Tarefa("Proteger civilização", false, x);
-            tf.Add(tf3);
-            Tarefa tf4 = new Tarefa("Escoltar comida para pobres", false, x);
-            tf.Add(tf4);
-            Tarefa tf5 = new Tarefa("Matar um general Islamico", false, x);
-            tf.Add(tf5);
-
-
-        }
-
+        
+      
         private void saveNome_Click(object sender, RoutedEventArgs e)
         {
             nomeF = nomefich.Text;
         }
+    
+        //Enviar dados para BO
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            bool gest = true;
+            
+            porta.Open();
+            while (gest)
+            {
+                data = " Insert into ";
+                porta.Write(data);
+
+                if (data.Equals("")) gest = false;
+            }
+
+        }
+
+        //Receber dados da BO
+        private void rececpaoDados_Click(object sender, RoutedEventArgs e)
+        {
+
+            porta.Open();
+            data = porta.ReadLine(); // vai receber o tamanho da lista de tarefas
+            int tTarefas = Int32.Parse(data); 
+            // vai receber tarefa a tarefa e inserir na list correspondente
+            for (int i = 0; i < tTarefas; i++) {
+                data = porta.ReadLine();
+                string[] words = data.Split(',');
+                Cordenadas c = new Cordenadas(float.Parse(words[1]), float.Parse(words[2]));
+                Tarefa tarefa = new Tarefa(words[0], false, c);
+                tf.Add(tarefa);
+              }
+
+            data = porta.ReadLine();
+            int tPi = Int32.Parse(data);
+
+            for (int i = 0; i < tPi; i++) {
+
+                data = porta.ReadLine();
+                string[] words = data.Split(',');
+                Cordenadas c = new Cordenadas(float.Parse(words[0]), float.Parse(words[1]));
+                PontoInteresee PI = new PontoInteresee(c, words[2], words[3]);
+
+
+
+            }
+            MessageBox.Show("Transferencia Completa");
+
+            porta.Close();
+
+
+
+
+
+
+
+        }
+
+      
+
+       
+
+        
+
+
     }
 }
