@@ -14,6 +14,7 @@ namespace Mobile_APP
     {
         Cordenadas cd;
         Navegacao nv;
+
         public Mosta_tarefas()
         {
             InitializeComponent();
@@ -40,6 +41,7 @@ namespace Mobile_APP
             tf.Add(tf4);
             Tarefa tf5 = new Tarefa("Matar um general Islamico", false, x);
             tf.Add(tf5);
+            MessageBox.Show(x.ToString());
 
             tfs.DataSource = tf;
         }

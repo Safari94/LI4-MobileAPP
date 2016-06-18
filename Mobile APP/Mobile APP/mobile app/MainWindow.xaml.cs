@@ -16,15 +16,15 @@ namespace Mobile_APP
     /// </summary>
     public partial class MainWindow : Window
     {
-        String nomeF;
+        String nomeFicheiro;
+        String Missão;
         Notepad nt;
         Mosta_tarefas mt;
         Mostra_PI mpi;
         List<PontoInteresee> pts;
         List<Tarefa> tf;
         List<String> notas;
-        static bool _continue;
-        static SerialPort porta;
+         static SerialPort porta;
         String data;
 
         public MainWindow()
@@ -34,8 +34,8 @@ namespace Mobile_APP
             tf = new List<Tarefa>();
            
             notas = new List<String>();
-            nomeF = "";
-            SerialPort porta = new SerialPort("COM6", 9600, Parity.None, 8, StopBits.One);
+            nomeFicheiro = "";
+            SerialPort porta = new SerialPort("COM7", 9600, Parity.None, 8, StopBits.One);
             data = "";
 
 
@@ -46,7 +46,7 @@ namespace Mobile_APP
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            mpi = new Mostra_PI();
+            mpi = new Mostra_PI(pts);
             mpi.Show();
             
         }
@@ -59,7 +59,7 @@ namespace Mobile_APP
             int r = 1;
 
             Document doc = new Document(PageSize.LETTER, 10, 10, 42, 35); // vai ser inicializado na class Missão
-            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream(nomefich+".pdf", FileMode.Create));
+            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream(nomeFicheiro+".pdf", FileMode.Create));
 
             doc.Open();
             iTextSharp.text.Paragraph p = new iTextSharp.text.Paragraph("Relatorio Oficial da Missao" + "\n\n" + "Tarefas:\n");
@@ -114,22 +114,13 @@ namespace Mobile_APP
       
         private void saveNome_Click(object sender, RoutedEventArgs e)
         {
-            nomeF = nomefich.Text;
+            nomeFicheiro = nomefich.Text;
         }
     
         //Enviar dados para BO
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            bool gest = true;
-            
-            porta.Open();
-            while (gest)
-            {
-                data = " Insert into ";
-                porta.Write(data);
-
-                if (data.Equals("")) gest = false;
-            }
+           /*Vai enviar o relatorio, fotos, notas e imagens captadas*/
 
         }
 
@@ -138,6 +129,7 @@ namespace Mobile_APP
         {
 
             porta.Open();
+            
             data = porta.ReadLine(); // vai receber o tamanho da lista de tarefas
             int tTarefas = Int32.Parse(data); 
             // vai receber tarefa a tarefa e inserir na list correspondente

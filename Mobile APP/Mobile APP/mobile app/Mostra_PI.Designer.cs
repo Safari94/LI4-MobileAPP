@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.interesse = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.nav = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.interesse)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // interesse
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 45);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(328, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.interesse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.interesse.Location = new System.Drawing.Point(35, 45);
+            this.interesse.Name = "interesse";
+            this.interesse.Size = new System.Drawing.Size(328, 150);
+            this.interesse.TabIndex = 0;
             // 
             // button1
             // 
@@ -50,13 +50,13 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Ver PI";
             this.button1.UseVisualStyleBackColor = true;
-            
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // nav
             // 
-            this.nav.Location = new System.Drawing.Point(415, 140);
+            this.nav.Location = new System.Drawing.Point(406, 141);
             this.nav.Name = "nav";
-            this.nav.Size = new System.Drawing.Size(75, 23);
+            this.nav.Size = new System.Drawing.Size(94, 23);
             this.nav.TabIndex = 2;
             this.nav.Text = "Ver no Mapa";
             this.nav.UseVisualStyleBackColor = true;
@@ -69,17 +69,17 @@
             this.ClientSize = new System.Drawing.Size(521, 261);
             this.Controls.Add(this.nav);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.interesse);
             this.Name = "Mostra_PI";
             this.Text = "Mostra_PI";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.interesse)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView interesse;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button nav;
     }

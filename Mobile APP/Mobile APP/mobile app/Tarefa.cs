@@ -10,7 +10,7 @@ namespace Mobile_APP
     {
         public String descricao { get; set; }
         public bool estado { get; set; } // vai indicar se ja esta feita  ou nao
-        public Cordenadas coord { get; set; } // Coordenada de cada Tarefa
+        private Cordenadas coord;
 
         public Tarefa(string x, bool est, Cordenadas c) {
             this.descricao = x;
@@ -18,12 +18,17 @@ namespace Mobile_APP
             this.coord = c;
         }
 
-        
+
 
         public String ToString()
         {
-            return "Descricao= "+descricao + ";" + "Estado= " + estado + ";" + coord.toString();
-                  
+            return "Descricao= " + descricao + ";" + "Estado= " + estado + ";" + coord.toString();
+
+        }
+
+        public Cordenadas Coord {
+            get
+            { return coord; }
         }
 
         

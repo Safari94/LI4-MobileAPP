@@ -40,7 +40,7 @@ namespace Mobile_APP
 
             
 
-           GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(coords.latitude, coords.longitude), GMarkerGoogleType.red);
+           GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(coords.Latidude, coords.Longitude), GMarkerGoogleType.red);
            m.Markers.Add(marker);
 
            

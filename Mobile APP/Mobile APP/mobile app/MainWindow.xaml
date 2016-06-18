@@ -48,8 +48,8 @@
                     <Label Content="Importar" HorizontalAlignment="Left" Margin="158,31,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
                     <Separator HorizontalAlignment="Left" Height="20" Margin="46,140,0,0" VerticalAlignment="Top" Width="302" Background="White"/>
                     <Label Content="Exportar" HorizontalAlignment="Left" Margin="160,160,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-                    <Button Content="Importar Dados" HorizontalAlignment="Left" Margin="146,82,0,0" VerticalAlignment="Top" Width="91"/>
-                    <Button Content="Exportar Dados" HorizontalAlignment="Left" Margin="146,208,0,0" VerticalAlignment="Top" Width="91"/>
+                    <Button x:Name="rececpaoDados" Content="Importar Dados" HorizontalAlignment="Left" Margin="146,82,0,0" VerticalAlignment="Top" Width="91" Click="rececpaoDados_Click"/>
+                    <Button Content="Exportar Dados" HorizontalAlignment="Left" Margin="146,208,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click_2"/>
                 </Grid>
             </TabItem>
         </TabControl>

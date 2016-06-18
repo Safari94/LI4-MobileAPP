@@ -14,10 +14,15 @@ namespace Mobile_APP
     public partial class Mostra_PI : Form
     {
         Navegacao nv;
+        List<PontoInteresee> pi;
+
         public Mostra_PI()
         {
             InitializeComponent();
+            pi = new List<PontoInteresee>();
         }
+
+       
 
 
 
@@ -28,9 +33,10 @@ namespace Mobile_APP
             nv.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            interesse.DataSource = pi;
         }
     }
 }

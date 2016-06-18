@@ -93,7 +93,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Missao.cs" />
     <Compile Include="Mostra_PI.cs">
       <SubType>Form</SubType>
     </Compile>
