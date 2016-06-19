@@ -14,9 +14,11 @@ namespace Mobile_APP
     public partial class Notepad : Form
     {
         String n { get; set; }
+        List<String> notas;
         public Notepad()
         {
             InitializeComponent();
+            notas = new List<string>();
             
         }
 
@@ -28,12 +30,13 @@ namespace Mobile_APP
         private void save_Click(object sender, EventArgs e)
         {
             n = nota.Text;
-            MessageBox.Show("Nota guardada com sucesso");
+            notas.Add(n);
 
         }
 
-        public string getNota() {
-            return n;
+        public List<String> getNotas() {
+
+            return notas;
         }
 
         

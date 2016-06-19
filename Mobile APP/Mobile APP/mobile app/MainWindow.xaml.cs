@@ -23,7 +23,7 @@ namespace Mobile_APP
         Mostra_PI mpi;
         List<PontoInteresee> pts;
         List<Tarefa> tf;
-        List<String> notas;
+        
          static SerialPort porta;
         String data;
 
@@ -33,7 +33,7 @@ namespace Mobile_APP
             
             tf = new List<Tarefa>();
            
-            notas = new List<String>();
+           
             nomeFicheiro = "";
             SerialPort porta = new SerialPort("COM7", 9600, Parity.None, 8, StopBits.One);
             data = "";
@@ -76,13 +76,7 @@ namespace Mobile_APP
             }
             p = new iTextSharp.text.Paragraph("Notas: \n \n");
             doc.Add(p);
-            r = 0;
-            foreach (String n in notas) {
-
-                p = new iTextSharp.text.Paragraph(r + ") --> " + n);
-                doc.Add(p);
-                r++;
-            }
+            
 
 
 
@@ -105,8 +99,7 @@ namespace Mobile_APP
 
             nt = new Notepad();
             nt.Show();
-            string s = nt.getNota();
-            notas.Add(s);
+            
 
         }
 

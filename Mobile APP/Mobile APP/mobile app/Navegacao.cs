@@ -38,7 +38,7 @@ namespace Mobile_APP
         }
         private void mapa_Click(object sender, EventArgs e)
         {
-            int i;
+          
             GMapOverlay m = new GMapOverlay("markers");
 
             
