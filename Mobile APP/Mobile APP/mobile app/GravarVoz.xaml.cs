@@ -38,6 +38,8 @@ namespace Mobile_APP
         /// </summary>
         private DataRecognitionClient dataClient;
 
+        private string fileName;
+
         /// <summary>
         /// The microphone client
         /// </summary>
@@ -577,6 +579,11 @@ namespace Mobile_APP
                         e.PhraseResponse.Results[i].DisplayText);
                 }
 
+                using (System.IO.StreamWriter file =
+           new System.IO.StreamWriter(fileName, true))
+                {
+                    file.WriteLine(e.PhraseResponse.Results[0].DisplayText);
+                }
                 this.WriteLine();
             }
         }
