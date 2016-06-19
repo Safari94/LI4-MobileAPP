@@ -76,6 +76,12 @@ namespace Mobile_APP
             }
             p = new iTextSharp.text.Paragraph("Notas: \n \n");
             doc.Add(p);
+            List<String> nts = nt.getNotas();
+
+            foreach (String n in nts) {
+                p = new iTextSharp.text.Paragraph(n);
+                doc.Add(p);
+            }
             
 
 
