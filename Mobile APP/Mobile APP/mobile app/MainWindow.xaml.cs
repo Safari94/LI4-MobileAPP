@@ -23,6 +23,7 @@ namespace Mobile_APP
         Mostra_PI mpi;
         List<PontoInteresee> pts;
         List<Tarefa> tf;
+        Foto ft;
         
          static SerialPort porta;
         String data;
@@ -166,12 +167,11 @@ namespace Mobile_APP
 
         }
 
-      
+        private void iphoto1_Click(object sender, RoutedEventArgs e)
+        {
+            ft = new Foto();
+            ft.Show();
 
-       
-
-        
-
-
+        }
     }
 }
