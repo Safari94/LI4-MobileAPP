@@ -173,5 +173,11 @@ namespace Mobile_APP
             ft.Show();
 
         }
+
+        private void gravarVoz_Click(object sender, RoutedEventArgs e)
+        {
+            GravarVoz gravar = new GravarVoz();
+            gravar.Show();
+        }
     }
 }
