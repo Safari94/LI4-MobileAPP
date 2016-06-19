@@ -18,7 +18,7 @@
                     <Button x:Name="verTarefas" Content="Ver" HorizontalAlignment="Left" Margin="109,89,0,0" VerticalAlignment="Top" Width="54" Click="verTarefas_Click"/>
                     <Button Content="Ver" HorizontalAlignment="Left" Margin="174,136,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click"/>
                     <Button x:Name="gravarVoz" Content="Gravador" HorizontalAlignment="Left" Height="20" Margin="46,217,0,0" VerticalAlignment="Top" Width="63" Click="gravarVoz_Click"/>
-                    <Button x:Name="np" Content="NotePad" HorizontalAlignment="Left" Height="21" Margin="165,216,0,0" VerticalAlignment="Top" Width="63" Click="button_Click_1"/>
+                    <Button x:Name="np" Content="NoteTake" HorizontalAlignment="Left" Height="21" Margin="165,216,0,0" VerticalAlignment="Top" Width="63" Click="button_Click_1"/>
                     <Button x:Name="iphoto1" Content="Cãmara" HorizontalAlignment="Left" Height="21" Margin="294,216,0,0" VerticalAlignment="Top" Width="69" Click="iphoto1_Click"/>
                 </Grid>
             </TabItem>

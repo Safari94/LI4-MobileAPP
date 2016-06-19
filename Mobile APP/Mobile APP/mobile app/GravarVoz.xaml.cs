@@ -25,7 +25,7 @@ namespace Mobile_APP
         /// <summary>
         /// The default subscription key prompt message
         /// </summary>
-        private const string DefaultSubscriptionKeyPromptMessage = "Paste your subscription key here to start";
+        private const string DefaultSubscriptionKeyPromptMessage = "46ccff26cdc44b0f99244d931492e242";
 
         /// <summary>
         /// You can also put the primary key in app.config, instead of using UI.
