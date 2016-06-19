@@ -16,22 +16,25 @@ namespace Mobile_APP
 {
     public partial class Navegacao : Form
     {
-       Cordenadas coords;
+        double latitude;
+        double longitude;
 
 
         public Navegacao()
         {
             InitializeComponent();
-            coords = new Cordenadas();
+            latitude = 0.0f;
+            longitude = 0.0f;
 
 
         }
 
-        public Navegacao(Cordenadas c)
+        public Navegacao(double lat, double lo)
         {
             InitializeComponent();
-            coords = c;
-            
+            latitude = lat;
+            longitude = lo;
+
         }
         private void mapa_Click(object sender, EventArgs e)
         {
@@ -40,7 +43,7 @@ namespace Mobile_APP
 
             
 
-           GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(coords.Latidude, coords.Longitude), GMarkerGoogleType.red);
+           GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(latitude, longitude), GMarkerGoogleType.red);
            m.Markers.Add(marker);
 
            

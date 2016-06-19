@@ -10,26 +10,26 @@ namespace Mobile_APP
     {
         public String descricao { get; set; }
         public bool estado { get; set; } // vai indicar se ja esta feita  ou nao
-        private Cordenadas coord;
+        public double latitude { get; set; }
+        public double longitude { get; set; }
 
-        public Tarefa(string x, bool est, Cordenadas c) {
+        public Tarefa(string x, bool est, double lat, double longe) {
             this.descricao = x;
             estado = est;
-            this.coord = c;
+            this.latitude=lat;
+            this.longitude = longe;
+            
         }
 
 
 
         public String ToString()
         {
-            return "Descricao= " + descricao + ";" + "Estado= " + estado + ";" + coord.toString();
+            return "Descricao= " + descricao + ";" + "Estado= " + estado + "; Latitude= " +latitude + "; Longitude= "+longitude;
 
         }
 
-        public Cordenadas Coord {
-            get
-            { return coord; }
-        }
+       
 
         
     }

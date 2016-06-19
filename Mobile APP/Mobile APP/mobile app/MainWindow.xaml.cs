@@ -46,7 +46,7 @@ namespace Mobile_APP
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            mpi = new Mostra_PI(pts);
+            mpi = new Mostra_PI();
             mpi.Show();
             
         }
@@ -136,8 +136,8 @@ namespace Mobile_APP
             for (int i = 0; i < tTarefas; i++) {
                 data = porta.ReadLine();
                 string[] words = data.Split(',');
-                Cordenadas c = new Cordenadas(float.Parse(words[1]), float.Parse(words[2]));
-                Tarefa tarefa = new Tarefa(words[0], false, c);
+                
+                Tarefa tarefa = new Tarefa(words[0], false, float.Parse(words[1]), float.Parse(words[2]));
                 tf.Add(tarefa);
               }
 

@@ -12,13 +12,16 @@ namespace Mobile_APP
 {
     public partial class Mosta_tarefas : Form
     {
-        Cordenadas cd;
+        
+        double c1;
+        double c2;
         Navegacao nv;
 
         public Mosta_tarefas()
         {
             InitializeComponent();
-            cd = new Cordenadas();
+            c1 = 0.0f;
+            c2 = 0.0f;
         }
 
 
@@ -30,25 +33,25 @@ namespace Mobile_APP
 
             List<Tarefa> tf = new List<Tarefa>();
 
-            Cordenadas x = new Cordenadas(41.585773, -8.359406);
-            Tarefa tf1 = new Tarefa("Matar um general Islamico", false, x);
+            
+            Tarefa tf1 = new Tarefa("Matar um general Islamico", false, 41.585773, -8.359406);
             tf.Add(tf1);
-            Tarefa tf2 = new Tarefa("Resgatar refens ", false, x);
+            Tarefa tf2 = new Tarefa("Resgatar refens ", false, 41.585773, -8.359406);
             tf.Add(tf2);
-            Tarefa tf3 = new Tarefa("Proteger civilização", false, x);
+            Tarefa tf3 = new Tarefa("Proteger civilização", false, 41.585773, -8.359406);
             tf.Add(tf3);
-            Tarefa tf4 = new Tarefa("Escoltar comida para pobres", false, x);
+            Tarefa tf4 = new Tarefa("Escoltar comida para pobres", false, 41.585773, -8.359406);
             tf.Add(tf4);
-            Tarefa tf5 = new Tarefa("Matar um general Islamico", false, x);
+            Tarefa tf5 = new Tarefa("Matar um general Islamico", false, 42.585773, -8.359406);
             tf.Add(tf5);
-            MessageBox.Show(x.ToString());
+          
 
             tfs.DataSource = tf;
         }
 
         private void verMapa_Click(object sender, EventArgs e)
         {
-            nv = new Navegacao(cd);
+            nv = new Navegacao(c1,c2);
             nv.Show();
 
         }
@@ -56,8 +59,11 @@ namespace Mobile_APP
         private void tfs_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var item = tfs.Rows[e.RowIndex].Cells[2].Value;
-            cd = (Cordenadas) item;
-            
+            var item2 = tfs.Rows[e.RowIndex].Cells[3].Value;
+             c1 = float.Parse(item.ToString());
+             c2 = float.Parse(item2.ToString());
+           
+
         }
     }
     }
