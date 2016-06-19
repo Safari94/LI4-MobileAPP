@@ -84,3 +84,7 @@ C:\Users\Miguel\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\Mobile APP\
 C:\Users\Miguel\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\Mobile APP\bin\x64\Debug\GMap.NET.Core.xml
 C:\Users\Miguel\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\Mobile APP\bin\x64\Debug\GMap.NET.WindowsForms.xml
 C:\Users\Miguel\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\Mobile APP\bin\x64\Debug\itextsharp.xml
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\x64\Debug\SpeechClient.dll
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\GravarVoz.baml
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\GravarVoz.g.cs
+C:\Users\Carolina Rodrigues\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\x64\Debug\Mobile_APP.Foto.resources
