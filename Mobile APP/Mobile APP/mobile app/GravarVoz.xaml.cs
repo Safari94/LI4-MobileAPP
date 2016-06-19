@@ -846,5 +846,15 @@ namespace Mobile_APP
             this._startButton.IsEnabled = true;
             this._radioGroup.IsEnabled = true;
         }
+
+        private void CreateFile_Click(object sender, RoutedEventArgs e)
+        {
+            this.fileName = textBox.Text;
+        }
+
+        private void textBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
+        }
     }
 }
