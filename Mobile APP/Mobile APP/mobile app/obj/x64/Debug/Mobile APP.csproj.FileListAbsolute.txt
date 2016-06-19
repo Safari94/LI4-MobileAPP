@@ -55,3 +55,6 @@ C:\Users\migue\Documents\GitHub\LI4-MobileAPP-master\Mobile APP\Mobile APP\Mobil
 C:\Users\migue\Documents\GitHub\LI4-MobileAPP-master\Mobile APP\Mobile APP\Mobile APP\bin\x64\Debug\GMap.NET.Core.xml
 C:\Users\migue\Documents\GitHub\LI4-MobileAPP-master\Mobile APP\Mobile APP\Mobile APP\bin\x64\Debug\GMap.NET.WindowsForms.xml
 C:\Users\migue\Documents\GitHub\LI4-MobileAPP-master\Mobile APP\Mobile APP\Mobile APP\bin\x64\Debug\itextsharp.xml
+C:\Users\Miguel\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\Mobile APP\bin\x64\Debug\Mobile APP.exe.config
+C:\Users\Miguel\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\Mobile APP\obj\x64\Debug\Mobile APP.exe
+C:\Users\Miguel\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\Mobile APP\obj\x64\Debug\Mobile APP.pdb
