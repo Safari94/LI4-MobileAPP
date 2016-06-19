@@ -15,7 +15,6 @@
                     <Label Content="Label" HorizontalAlignment="Left" Margin="109,17,0,0" VerticalAlignment="Top" Width="102" Foreground="White"/>
                     <Label Content="Tarefas" HorizontalAlignment="Left" Margin="27,86,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
                     <Label Content="Pontos de Interesse" HorizontalAlignment="Left" Margin="27,136,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-                    <Button Content="Concluir" HorizontalAlignment="Left" Margin="318,84,0,0" VerticalAlignment="Top" Width="54"/>
                     <Button x:Name="verTarefas" Content="Ver" HorizontalAlignment="Left" Margin="109,89,0,0" VerticalAlignment="Top" Width="54" Click="verTarefas_Click"/>
                     <Button Content="Ver" HorizontalAlignment="Left" Margin="174,136,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click"/>
                     <Button x:Name="gravarVoz" Content="Gravador" HorizontalAlignment="Left" Height="20" Margin="46,217,0,0" VerticalAlignment="Top" Width="63"/>

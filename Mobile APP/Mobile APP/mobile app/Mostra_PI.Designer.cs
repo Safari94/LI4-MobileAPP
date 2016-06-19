@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.interesse = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.mostarPI = new System.Windows.Forms.Button();
             this.nav = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.interesse)).BeginInit();
             this.SuspendLayout();
@@ -39,22 +39,23 @@
             this.interesse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.interesse.Location = new System.Drawing.Point(35, 45);
             this.interesse.Name = "interesse";
-            this.interesse.Size = new System.Drawing.Size(328, 150);
+            this.interesse.Size = new System.Drawing.Size(586, 150);
             this.interesse.TabIndex = 0;
+            this.interesse.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.interesse_CellClick);
             // 
-            // button1
+            // mostarPI
             // 
-            this.button1.Location = new System.Drawing.Point(415, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Ver PI";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.mostarPI.Location = new System.Drawing.Point(683, 58);
+            this.mostarPI.Name = "mostarPI";
+            this.mostarPI.Size = new System.Drawing.Size(75, 23);
+            this.mostarPI.TabIndex = 1;
+            this.mostarPI.Text = "Ver PI";
+            this.mostarPI.UseVisualStyleBackColor = true;
+            this.mostarPI.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // nav
             // 
-            this.nav.Location = new System.Drawing.Point(406, 141);
+            this.nav.Location = new System.Drawing.Point(683, 139);
             this.nav.Name = "nav";
             this.nav.Size = new System.Drawing.Size(94, 23);
             this.nav.TabIndex = 2;
@@ -66,9 +67,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 261);
+            this.ClientSize = new System.Drawing.Size(836, 261);
             this.Controls.Add(this.nav);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.mostarPI);
             this.Controls.Add(this.interesse);
             this.Name = "Mostra_PI";
             this.Text = "Mostra_PI";
@@ -80,7 +81,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView interesse;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button mostarPI;
         private System.Windows.Forms.Button nav;
     }
 }

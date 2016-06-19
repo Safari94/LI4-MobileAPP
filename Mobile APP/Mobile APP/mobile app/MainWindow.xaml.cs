@@ -148,8 +148,9 @@ namespace Mobile_APP
 
                 data = porta.ReadLine();
                 string[] words = data.Split(',');
-                Cordenadas c = new Cordenadas(float.Parse(words[0]), float.Parse(words[1]));
-                PontoInteresee PI = new PontoInteresee(c, words[2], words[3]);
+                
+                PontoInteresee PI = new PontoInteresee(float.Parse(words[0]), float.Parse(words[1]), words[2], words[3]);
+                pts.Add(PI);
 
 
 

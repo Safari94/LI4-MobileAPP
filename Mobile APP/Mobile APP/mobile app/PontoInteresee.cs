@@ -11,13 +11,15 @@ namespace Mobile_APP
 {
     class PontoInteresee
     {
-        public Cordenadas coord { get; set; }
+        public double latitude { get; set; }
+        public double longitude { get; set; }
         public String nome { get; set; }
         public String descricao { get; set; }
 
 
-        public PontoInteresee(Cordenadas cord, String n, String d) {
-            coord = cord;
+        public PontoInteresee(double lat, double longe, String n, String d) {
+            latitude = lat;
+            longitude = longe;
             nome = n;
             descricao = d;
 
@@ -25,7 +27,7 @@ namespace Mobile_APP
         }
 
         public String toString() {
-            return coord.toString() + "; Nota: " + nome + "; Descrição: " + descricao;
+            return "Latitude= "+latitude+ "; Longitude="+longitude+ "; Nota: " + nome + "; Descrição: " + descricao;
         }
 
         
