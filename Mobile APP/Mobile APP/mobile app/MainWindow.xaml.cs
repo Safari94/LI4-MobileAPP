@@ -33,12 +33,31 @@ namespace Mobile_APP
             InitializeComponent();
             
             tf = new List<Tarefa>();
+            pts = new List<PontoInteresee>();
+            
            
            
             nomeFicheiro = "";
             SerialPort porta = new SerialPort("COM7", 9600, Parity.None, 8, StopBits.One);
             data = "";
 
+
+
+        }
+
+        public void insereTarefas() {
+
+
+            Tarefa tf1 = new Tarefa("Matar um general Islamico", false, 41.567773, -8.359406);
+            tf.Add(tf1);
+            Tarefa tf2 = new Tarefa("Resgatar refens ", false, 41.585773, -8.459406);
+            tf.Add(tf2);
+            Tarefa tf3 = new Tarefa("Proteger civilização", false, 41.585773, -8.759406);
+            tf.Add(tf3);
+            Tarefa tf4 = new Tarefa("Escoltar comida para pobres", false, 41.285773, -8.359406);
+            tf.Add(tf4);
+            Tarefa tf5 = new Tarefa("Matar um general Islamico", false, 42.525773, -8.459306);
+            tf.Add(tf5);
 
 
         }
@@ -56,7 +75,7 @@ namespace Mobile_APP
         // Gera relatorio
         private void pdf_Click(object sender, RoutedEventArgs e)
         {
-            //this.insereTarefas();
+            this.insereTarefas();
             int r = 1;
 
             Document doc = new Document(PageSize.LETTER, 10, 10, 42, 35); // vai ser inicializado na class Missão
@@ -75,8 +94,10 @@ namespace Mobile_APP
                 r++;
 
             }
+
             p = new iTextSharp.text.Paragraph("Notas: \n \n");
             doc.Add(p);
+
             List<String> nts = nt.getNotas();
 
             foreach (String n in nts) {
