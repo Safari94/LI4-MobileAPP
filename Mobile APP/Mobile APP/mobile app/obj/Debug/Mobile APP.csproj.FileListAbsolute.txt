@@ -51,3 +51,16 @@ C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile a
 C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile_APP.Navegacao.resources
 C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile_APP.Properties.Resources.resources
 C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile APP.csproj.GenerateResource.Cache
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\Debug\AForge.Controls.dll
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\Debug\AForge.dll
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\Debug\AForge.Imaging.dll
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\Debug\AForge.Math.dll
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\Debug\AForge.Video.dll
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\bin\Debug\SpeechClient.dll
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\GravarVoz.baml
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\GravarVoz.g.cs
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile_APP.Foto.resources
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile_APP.Mostra_PI.resources
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile_APP.Mosta_tarefas.resources
+C:\Users\nmore_000\Documents\GitHub\LI4-MobileAPP\Mobile APP\Mobile APP\mobile app\obj\Debug\Mobile_APP.Notepad.resources
